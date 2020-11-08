@@ -18,6 +18,37 @@
     background: #2F2FA2;
     color: white;
   }
+
+  
+  p {
+    font-size: 13px;
+    line-height: 17px;
+} 
+:root {
+    --mainColor: #ff9800;
+  }
+  
+ 
+ 
+A.class1 {color:white}
+
+A.class2 {color:white;}
+A.class2:link {background:
+linear-gradient(
+  to bottom, var(--mainColor) 0%,
+  var(--mainColor) 100%
+);
+background-position: 0 100%;
+background-repeat: repeat-x;
+background-size: 4px 4px;
+color: #000;
+text-decoration: none;
+transition: background-size .2s;}
+A.class2:link {text-decoration: none; color: white;}
+A.class2:visited {text-decoration: none; color: white;}
+A.class2:hover {background-size: 4px 50px;}
+A.class2:active {text-decoration: none; color: white;}
+
   
   .avatar {
     width: 150px;
@@ -124,7 +155,62 @@
     padding: 0px;
   }
 
-  
+  /* gradient na backgroundzie i napis*/
+
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,900);
+
+.module {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 143, 0.7),
+      rgba(0, 0, 72, 0.7)
+    ),
+    url(/img/un4.jpg);
+  background-size: cover;
+  width: 960px;
+  height: 365px;
+  margin: 0px 0px 20px 0px;
+  position: relative;
+  float: left;
+}
+
+.top h2 {
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+.lr p {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  margin: 0;
+}
+
+.mid h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+}
+
+.cap p {
+  padding: 20px;
+  color: white;
+  font: 12px Monaco, Mono-Space;
+  margin: 0;
+}
+
+
+/* here */
   
   /* Add a card effect for articles */
   .card {
@@ -135,8 +221,8 @@
   
   .blocks {
       background-color:#2F2FA2;
-      padding: 20px;
-      margin-top: 20px;
+      padding: 0px;
+      margin-top: 22px;
   }
   /* Clear floats after the columns */
   .row:after {
@@ -159,6 +245,9 @@
     margin-top: 20px;
     height: 150px;
     font-size: 12px;
+    
+    
+  
   }
 
   .footer a {
@@ -224,3 +313,7 @@
       width: 100%;
     }
   }
+
+
+
+  
