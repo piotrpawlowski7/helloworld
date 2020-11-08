@@ -1,45 +1,166 @@
-body { background-color: lightgray;
-}
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+  }
 
-h1 {
-    color: white;
-    margin-left: 0px;
-    background-color: rgb(255, 99, 71);
-border: 0px;
-border-style:solid;
-padding: 70px;
-}
-
-h2 {
-    color: white;
-
-}
-
-ul { margin-left: 50px;
-}
-
-div {
-    height: 400px;
-    wdight: 50%
-  
-}
-
-
-
-.box { 
+* {
     box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'MyWebFont', Helvetica Neue, sans-serif;
+    padding: 10px;
+    background: #2F2FA2;
+    color: white;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background:#2F2FA2;
+    
+  }
+  
+  .header h1 {
+    font-size: 50px;
+    color: white;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #242582;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
     float: left;
-    width: 33.33%;
-    height: 200px;
-    padding: 0px;
-    padding-top: 70px;
-    background-color: #ffffff;
+    display: block;
+    color: #F64C72;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: #F64C72;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #2F2FA2;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color:#242582;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .blocks {
+      background-color:#2F2FA2;
+      padding: 20px;
+      margin-top: 20px;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    
+    background: #242582;
+    margin-top: 20px;
+    height: 150px;
+    font-size: 12px;
+  }
 
-}
+  .footer a {
+      color: white;
+      font-size: 12px;
+  }
+  .leftfooter {
+      margin-top: 30px;
+      float: left;
+      width: 33.3%;
+  }
+  .midfooter {
+      margin-top: 30px;
+      float:left;
+      width: 33.3%
+  }
+  .rightfooter {
+      margin-top:30px;
+      float:left;
+    width:33.3%;
 
-.clearfix::after {
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  
+.clearfix:after {
     content: "";
     clear: both;
     display: table;
 
 /* komentarz */
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
